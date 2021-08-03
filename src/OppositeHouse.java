@@ -14,13 +14,10 @@ public class OppositeHouse {
         the house number on the opposite side.
 
         Examples:
-
         oppositeHouse(1, 3) ==> 6
         oppositeHouse(2, 3) ==> 5
         oppositeHouse(3, 5) ==> 8
         oppositeHouse(5, 46) ==> 88
-
-
      */
 
     public static void main(String[] args) {
@@ -28,12 +25,10 @@ public class OppositeHouse {
     }
 
     static int oppositeHouse(int house, int n) {
-
         ArrayList<Integer> leftSide = new ArrayList<>();
         ArrayList<Integer> rightSide = new ArrayList<>();
 
         int countOfHouses = n * 2;
-
 
         for (int i = 1, j = countOfHouses; i <= countOfHouses; i += 2, j -= 2) {
             leftSide.add(i);
@@ -46,9 +41,6 @@ public class OppositeHouse {
                 System.out.println();
             }
         */
-
         return (countOfHouses + 1) - house;
-
     }
-
 }
